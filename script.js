@@ -142,6 +142,11 @@ function drawCanvas() {
     const albumName = 'Actual Life 3';
     ctx.fillText(albumName, width/2-ctx.measureText(albumName).width/2, 100*ratio);
 
+    ctx.fillStyle = 'rgba(255,255,255, 0.7)';
+    ctx.beginPath();
+    ctx.roundRect(margin, startingHeight+480*ratio, imgWidth, 3, 1);
+    ctx.fill();
+
     // Drawing artist name
     ctx.fillStyle = 'rgba(255,255,255, 0.7)';
     ctx.font = "16px 'Circular'";
@@ -150,11 +155,7 @@ function drawCanvas() {
     ctx.fillRect(0,0,100,100);
 
     // Drawing player controls
-    resetCanvas();
-    ctx.fillStyle = 'rgba(255,255,255, 0.7)';
-    ctx.beginPath();
-    ctx.roundRect(margin, startingHeight+480*ratio, imgWidth, 3, 1);
-    ctx.fill();
+    
     ctx.beginPath();
     ctx.fillStyle = 'rgb(255,255,255)';
     ctx.ellipse(margin + 3, startingHeight+482*ratio, 6, 6, 0, 0, 360*ratio);
