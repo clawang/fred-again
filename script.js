@@ -41,6 +41,7 @@ function setup() {
   // set the CSS display size
     if(window.innerWidth < 414) {
         ratio = window.innerWidth/414;
+        console.log(ratio);
         width = window.innerWidth;
         height = window.innerWidth*896/414;
     }
@@ -154,11 +155,15 @@ function drawCanvas() {
     ctx.fillStyle = 'rgb(255,255,255)';
     ctx.ellipse(margin + 3, startingHeight+482*ratio, 6, 6, 0, 0, 360*ratio);
     ctx.fill();
+
     ctx.font = "10px 'Circular'";
     ctx.fillText('0:00', margin - 2, startingHeight+500*ratio);
     ctx.fillText('-4:10', width-margin-23, startingHeight+500*ratio);
+    ctx.beginPath();
     ctx.ellipse(width/2, startingHeight+550*ratio, 30*ratio, 30*ratio, 0, 0, 360*ratio);
     ctx.fill();
+    console.log("we are drawing the player controls");
+
     ctx.fillStyle= 'rgb(29,30,32)';
     let play = new Path2D('M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z');
     ctx.translate(width/2-12*ratio, startingHeight+539*ratio);

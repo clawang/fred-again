@@ -35,7 +35,17 @@ const songNames = [
 	"get a load of this moron",
 	"insufferable nerd",
 	"beta",
-	"killing myself"
+	"killing myself",
+	"problematic",
+	"toxic",
+	"lowkey catfish",
+	"kinda ugly",
+	"funny looking",
+	"attention whore",
+	"annoying",
+	"ew",
+	"suffering",
+	"borderline alcoholic"
 ];
 
 export {songNames};
