@@ -41,7 +41,6 @@ function setup() {
   // set the CSS display size
     if(window.innerWidth < 414) {
         ratio = window.innerWidth/414;
-        console.log(ratio);
         width = window.innerWidth;
         height = window.innerWidth*896/414;
     }
@@ -120,7 +119,11 @@ function drawCanvas() {
     // name = 'Claire';
     ctx.fillStyle= 'rgb(29,30,32)';
     ctx.fillRect(0,0,width,height);
-    ctx.drawImage(image,0,(image.height-image.width)/2,image.width, image.width,margin,startingHeight,imgWidth,imgWidth);
+    if (image.width<=image.height) {
+        ctx.drawImage(image,0,(image.height-image.width)/2,image.width,image.width,margin,startingHeight,imgWidth,imgWidth);
+    } else {
+        ctx.drawImage(image,(image.width-image.height)/2,0,image.height,image.height,margin,startingHeight,imgWidth,imgWidth);
+    }
     ctx.fillStyle = 'rgba(9,0,232,0.7)';
     ctx.fillRect(margin,startingHeight,imgWidth,imgWidth);
 
