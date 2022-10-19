@@ -175,7 +175,7 @@ function drawCanvas() {
     resetCanvas();
 
     ctx.fillStyle = 'rgb(255,255,255)';
-    forward = new Path2D('M12.7 1a.7.7 0 00-.7.7v5.15L2.05 1.107A.7.7 0 001 1.712v12.575a.7.7 0 001.05.607L12 9.149V14.3a.7.7 0 00.7.7h1.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7h-1.6z');
+    let forward = new Path2D('M12.7 1a.7.7 0 00-.7.7v5.15L2.05 1.107A.7.7 0 001 1.712v12.575a.7.7 0 001.05.607L12 9.149V14.3a.7.7 0 00.7.7h1.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7h-1.6z');
     ctx.translate(width/2+82*ratio, startingHeight+537*ratio);
     ctx.scale(1.8*ratio,1.8*ratio);
     ctx.fill(forward);
