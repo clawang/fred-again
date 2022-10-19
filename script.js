@@ -124,7 +124,7 @@ function drawCanvas() {
     } else {
         ctx.drawImage(image,(image.width-image.height)/2,0,image.height,image.height,margin,startingHeight,imgWidth,imgWidth);
     }
-    ctx.fillStyle = 'rgba(9,0,232,0.7)';
+    ctx.fillStyle = 'rgba(0, 19, 232,0.7)';
     ctx.fillRect(margin,startingHeight,imgWidth,imgWidth);
 
     // Drawing song title
