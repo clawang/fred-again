@@ -153,8 +153,11 @@ function drawCanvas() {
     ctx.fillStyle = 'rgba(255,255,255, 0.7)';
     ctx.font = "16px 'Circular'";
     ctx.fillText('Fred again..', margin, startingHeight + 450*ratio);
+    ctx.save();
 
     // Drawing player controls
+    resetCanvas();
+    ctx.fillStyle = 'rgba(255,255,255, 0.7)';
     ctx.beginPath();
     ctx.roundRect(margin, startingHeight+480*ratio, imgWidth, 3, 1);
     ctx.fill();
