@@ -1,0 +1,93 @@
+@font-face {
+  font-family: Circular Medium;
+  src: url('./Circular-Medium.ttf');
+}
+
+@font-face {
+  font-family: Circular Book;
+  src: url('./Circular Book.ttf');
+}
+
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+h4 {
+	font-weight: 400;
+}
+
+a {
+	color: #0f099d;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+a:hover {
+	background: black;
+	color: white;
+}
+
+#container {
+	width: 100%;
+	max-width: 600px;
+	margin: 50px auto;
+}
+
+form {
+	border: 1px solid black;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+
+form > div {
+	margin: 10px 0;
+}
+
+label {
+	width: 100%;
+	letter-spacing: 2px;
+	font-size: 12px;
+	text-transform: lowercase;
+}
+
+input[type="text"] {
+	border: 1px solid black;
+}
+
+input[type="submit"], button {
+	background: black;
+	border: none;
+	color: white;
+	padding: 5px 10px;
+	font-family: 'Helvetica Neue', sans-serif;
+	text-transform: lowercase;
+	margin: 5px 0;
+}
+
+canvas {
+	width: 414px;
+	height: 896px;
+}
+
+#player {
+	width: 100%;
+	max-width: 414px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.hide {
+	display: none !important;
+}
+
+#disclaimer {
+	text-align: center;
+}
+
+#disclaimer p {
+	font-size: 10px;
+	font-style: italic;
+}

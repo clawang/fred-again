@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+  <title>You as a Fred again.. Song</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <h1>You as a Fred again.. Song</h1>
+    <h4>Ever wonder if Fred himself would write a song about you? He would never, but with this new AI technology you can see what your song on Actual Life 3 would hypothetically look like.</h4>
+    <form>
+      <div>
+        <label>first name</label><br/>
+        <input type="text" id="name" maxLength="20"/><br/>
+      </div>
+      <div>
+        <label>Upload a Selfie</label><br/>
+        <input type="file" id="imageLoader" name="imageLoader" accept="image/*"/><br/>
+      </div>
+      <input type="submit" id="submit" />
+    </form>
+    <div id="player" class="hide">
+      <canvas id="imageCanvas"></canvas>
+      <button id="download">Download</button>
+    </div>
+    <div id="disclaimer">
+      <p>Not affiliated with <a href="https://open.spotify.com/artist/4oLeXFyACqeem2VImYeBFe?si=eNzK5086Q2yLb7B8fAg15g" target="_blank">Fred again..</a>, although Fred if you see this ily.</p>
+      <p>Made by <a href="https://www.tiktok.com/@claireewang" target="_blank">@claireewang</a></p>
+    </div>
+  </div>
+  <div style="display:none">
+    <img src="./propic.jpeg" id="pic" />
+  </div>
+  <script type="module" src="./variables.js"></script>
+  <script type="module" src="./script.js"></script>
+</body>
