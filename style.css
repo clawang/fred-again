@@ -62,6 +62,7 @@ input[type="submit"], button {
 	font-family: 'Helvetica Neue', sans-serif;
 	text-transform: lowercase;
 	margin: 5px 0;
+	cursor: pointer;
 }
 
 canvas {
