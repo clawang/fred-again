@@ -178,7 +178,7 @@ function drawCanvas() {
     resetCanvas();
 
     ctx.fillStyle = 'rgb(255,255,255)';
-    let rewind = new Path2D('M3.3 1a.7.7 0 01.7.7v5.15l9.95-5.744a.7.7 0 011.05.606v12.575a.7.7 0 01-1.05.607L4 9.149V14.3a.7.7 0 01-.7.7H1.7a.7.7 0 01-.7-.7V1.7a.7.7 0 01.7-.7h1.6z');
+    rewind = new Path2D('M3.3 1a.7.7 0 01.7.7v5.15l9.95-5.744a.7.7 0 011.05.606v12.575a.7.7 0 01-1.05.607L4 9.149V14.3a.7.7 0 01-.7.7H1.7a.7.7 0 01-.7-.7V1.7a.7.7 0 01.7-.7h1.6z');
     ctx.translate(width/2-110*ratio, startingHeight+537*ratio);
     ctx.scale(1.8*ratio,1.8*ratio);
     ctx.fill(rewind);
