@@ -124,13 +124,6 @@ function drawCanvas() {
     ctx.fillStyle = 'rgba(9,0,232,0.7)';
     ctx.fillRect(margin,startingHeight,imgWidth,imgWidth);
 
-    ctx.fillStyle = 'rgb(255,255,255)';
-    let rewind = new Path2D('M3.3 1a.7.7 0 01.7.7v5.15l9.95-5.744a.7.7 0 011.05.606v12.575a.7.7 0 01-1.05.607L4 9.149V14.3a.7.7 0 01-.7.7H1.7a.7.7 0 01-.7-.7V1.7a.7.7 0 01.7-.7h1.6z');
-    ctx.translate(width/2-110*ratio, startingHeight+537*ratio);
-    ctx.scale(1.8*ratio,1.8*ratio);
-    ctx.fill(rewind);
-    resetCanvas();
-
     // Drawing song title
     ctx.fillStyle = 'rgb(255,255,255)';
     ctx.font = "22px Circular Medium";
@@ -148,6 +141,13 @@ function drawCanvas() {
     ctx.font = "14px Circular Medium";
     const albumName = 'Actual Life 3';
     ctx.fillText(albumName, width/2-ctx.measureText(albumName).width/2, 100*ratio);
+
+    ctx.fillStyle = 'rgb(255,255,255)';
+    let forward = new Path2D('M12.7 1a.7.7 0 00-.7.7v5.15L2.05 1.107A.7.7 0 001 1.712v12.575a.7.7 0 001.05.607L12 9.149V14.3a.7.7 0 00.7.7h1.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7h-1.6z');
+    ctx.translate(width/2+82*ratio, startingHeight+537*ratio);
+    ctx.scale(1.8*ratio,1.8*ratio);
+    ctx.fill(forward);
+    resetCanvas();
 
     // Drawing artist name
     ctx.fillStyle = 'rgba(255,255,255, 0.7)';
@@ -181,14 +181,14 @@ function drawCanvas() {
     resetCanvas();
 
     ctx.fillStyle = 'rgb(255,255,255)';
-    rewind = new Path2D('M3.3 1a.7.7 0 01.7.7v5.15l9.95-5.744a.7.7 0 011.05.606v12.575a.7.7 0 01-1.05.607L4 9.149V14.3a.7.7 0 01-.7.7H1.7a.7.7 0 01-.7-.7V1.7a.7.7 0 01.7-.7h1.6z');
+    let rewind = new Path2D('M3.3 1a.7.7 0 01.7.7v5.15l9.95-5.744a.7.7 0 011.05.606v12.575a.7.7 0 01-1.05.607L4 9.149V14.3a.7.7 0 01-.7.7H1.7a.7.7 0 01-.7-.7V1.7a.7.7 0 01.7-.7h1.6z');
     ctx.translate(width/2-110*ratio, startingHeight+537*ratio);
     ctx.scale(1.8*ratio,1.8*ratio);
     ctx.fill(rewind);
     resetCanvas();
 
     ctx.fillStyle = 'rgb(255,255,255)';
-    let forward = new Path2D('M12.7 1a.7.7 0 00-.7.7v5.15L2.05 1.107A.7.7 0 001 1.712v12.575a.7.7 0 001.05.607L12 9.149V14.3a.7.7 0 00.7.7h1.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7h-1.6z');
+    forward = new Path2D('M12.7 1a.7.7 0 00-.7.7v5.15L2.05 1.107A.7.7 0 001 1.712v12.575a.7.7 0 001.05.607L12 9.149V14.3a.7.7 0 00.7.7h1.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7h-1.6z');
     ctx.translate(width/2+82*ratio, startingHeight+537*ratio);
     ctx.scale(1.8*ratio,1.8*ratio);
     ctx.fill(forward);
