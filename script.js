@@ -142,6 +142,13 @@ function drawCanvas() {
     const albumName = 'Actual Life 3';
     ctx.fillText(albumName, width/2-ctx.measureText(albumName).width/2, 100*ratio);
 
+    // Drawing artist name
+    ctx.fillStyle = 'rgba(255,255,255, 0.7)';
+    ctx.font = "16px 'Circular'";
+    ctx.fillText('Fred again..', margin, startingHeight + 450*ratio);
+
+    ctx.fillRect(0,0,100,100);
+
     // Drawing player controls
     resetCanvas();
     ctx.fillStyle = 'rgba(255,255,255, 0.7)';
@@ -209,11 +216,6 @@ function drawCanvas() {
     ctx.rotate(-90 * Math.PI / 180);
     ctx.fill(arrow);
     resetCanvas();
-
-    // Drawing artist name
-    ctx.fillStyle = 'rgba(255,255,255, 0.7)';
-    ctx.font = "16px 'Circular'";
-    ctx.fillText('Fred again..', margin, startingHeight + 450*ratio);
 }
 
 function downloadImage() {
