@@ -1,5 +1,5 @@
 const songNames = [
-	"shitting in my pants",
+	"pissing in my jeans",
 	"stuck in a khole",
 	"obliterated on a monday",
 	"i can fix them",
@@ -18,7 +18,7 @@ const songNames = [
 	"chronically online",
 	"dissociating at the function",
 	"delusional",
-	"irritable bowel syndrome",
+	"constipated",
 	"no bitches",
 	"unironically cringe",
 	"mental illness",
@@ -31,7 +31,7 @@ const songNames = [
 	"socially awkward",
 	"getting ghosted",
 	"farting in the club",
-	"miserable loser",
+	"pathetic loser",
 	"get a load of this moron",
 	"insufferable nerd",
 	"beta",
@@ -45,7 +45,17 @@ const songNames = [
 	"annoying",
 	"ew",
 	"suffering",
-	"borderline alcoholic"
+	"borderline alcoholic",
+	"a little slow",
+	"aging poorly",
+	"wetting the bed",
+	"gets bullied by children",
+	"unfunny",
+	"stinky",
+	"at rock bottom",
+	"nothing special",
+	"has no life",
+	"a bit much",
 ];
 
 export {songNames};
