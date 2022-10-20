@@ -38,7 +38,7 @@ const songNames = [
 	"killing myself",
 	"problematic",
 	"toxic",
-	"lowkey catfish",
+	"major catfish",
 	"kinda ugly",
 	"funny looking",
 	"attention whore",
@@ -51,11 +51,12 @@ const songNames = [
 	"wetting the bed",
 	"gets bullied by children",
 	"unfunny",
-	"stinky",
+	"lowkey stinky",
 	"at rock bottom",
 	"nothing special",
 	"has no life",
 	"a bit much",
+	"forgettable"
 ];
 
 export {songNames};
