@@ -112,6 +112,7 @@ function drawCanvas() {
     const imgWidth = 360*ratio;
     let startingHeight = 180*ratio;
     let name = capitalize(document.getElementById("name").value);
+    name = name.trim();
     let song = songNames[getRandom(0, songNames.length)];
     const margin = (width-imgWidth)/2*ratio;
 
