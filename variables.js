@@ -56,7 +56,9 @@ const songNames = [
 	"nothing special",
 	"has no life",
 	"a bit much",
-	"forgettable"
+	"forgettable",
+	"forever alone",
+	"no drip"
 ];
 
 export {songNames};
